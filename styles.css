@@ -1,92 +1,93 @@
 /*Base Styles*/
 * {
-    box-sizing: border-box; 
-   }
+  box-sizing: border-box; 
+ }
+ 
+ 
+ footer span {
+   color: #fff;
+ }
+ 
+ /*Navigation*/
+ 
+ 
+ /*Pseudo Classes*/
+ 
+ a:link {
+   color: #fff;
+   text-decoration-line: none;
+   font-size: 20px;
+   font-style:oblique;
+ }
    
-   footer span {
-     color: #fff;
-   }
+
+
+ a:hover {
+   text-decoration-line:underline;
+ }
+
+ 
    
-   /*Navigation*/
-   .name,
-   .main-nav,
-   .main-nav li {
-     display: block; 
-   }
-   
-   .main-nav,
-   .main-nav li { 
-     padding-right: 1em;
-     float: left;
-   }
-   
-   
-   /*Pseudo Classes*/
-   
-   a:link {
-     color: #fff;
-     text-decoration-line: none;
-     font-size: 20px;
-     font-style:oblique;
-   }
-     
-     
-   
-   /*Main Styles*/
-   
-   .main-header {
-     height: 600px;
-     box-sizing: border-box;
-     background-image: url("/Portfolio_Project/images/lou_bridge.jpg");
-     background-size: cover;
-     background-repeat: no-repeat;
-     background-color: #000;
-     background-position: center;
-     margin-top: 2em;
-   }
+ 
+ /*Main Styles*/
+ 
+ .main-header {
+   height: 1000px;
+   box-sizing: border-box;
+   background-image: url("images/panama_sunset.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-color: #000;
+   background-position: center;
+ }
+ 
+ .main-footer {
+   text-align: center;
+   padding: 2em;
+   background-color: #000;
+   height: 100px;
+ }
+ 
+ 
+ /*Layout Styles*/
+ .name {
+   margin: 0px;
+   color: #fff;
+ }
+ 
+
+ /*Media Queries*/
+ @media (min-width: 769px) {
    
    .main-footer {
-     text-align: center;
-     padding: 2em;
-     background-color: #000;
-     height: 100px;
+     min-height:10vh;
    }
-   
-   
-   /*Layout Styles*/
-   
-   
-   
-   /*Media Queries*/
-   @media (min-width: 769px) {
-     
-     .main-footer {
-       min-height:10vh;
-     }
-   
-     .name,
-     .main-nav,
-     .main-nav li {
-       display: inline-block;
-    }
-   
-     .name {
-       float: left;
-       margin: 0;
-    }
-   
-     .main-nav {
-       float: right;
-       padding-top: 14px;
-       
-    }
-   
-     .container {
-       width: 70%;
-       max-width: 1000px;
-       margin: 0 auto;  
-     }
-   
-   
-   
+ 
+ 
+ .main-header .container {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-end;
+     flex-wrap: wrap;
+     flex-direction: row;
    }
+ 
+ .main-nav li{
+   display: inline-flex;
+   padding: 0 1.5em;
+   }
+ 
+ .name{
+   display: inline-block;
+   }
+ 
+   .container {
+   display: flex;
+   justify-content: center;
+ }
+ 
+@media (min-width: 1025px) {
+
+}
+
+ }
