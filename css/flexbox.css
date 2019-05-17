@@ -1,0 +1,23 @@
+/*Base Styles*/
+
+@media (min-width: 769px) {
+
+    .main-header,
+    .main-nav,
+    .main-footer {
+        display: flex;
+    }
+
+    .main-header {
+      flex-direction: column; 
+      align-items: center;
+    }
+
+    .name, .main-nav {
+        flex-wrap:wrap
+    }
+
+
+
+
+}

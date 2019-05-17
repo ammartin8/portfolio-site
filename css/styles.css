@@ -20,27 +20,25 @@
    font-style:oblique;
  }
    
-
-
+ 
  a:hover {
    text-decoration-line:underline;
  }
-
- 
    
  
  /*Main Styles*/
  
  .main-header {
-   height: 1000px;
+   height: 1200px;
    box-sizing: border-box;
-   background-image: url("images/panama_sunset.jpg");
+   background-image: url("/Portfolio_Project/images/panama_sunset.jpg");
    background-size: cover;
    background-repeat: no-repeat;
    background-color: #000;
    background-position: center;
  }
  
+
  .main-footer {
    text-align: center;
    padding: 2em;
@@ -55,7 +53,16 @@
    color: #fff;
  }
  
-
+ .submit-btn {
+   padding: 1.5em 3em;
+   width: 20em;
+   color: #fff;
+   background-color: #000;
+   font-size: 1em;
+   margin-bottom: 10px;
+ }
+ 
+ 
  /*Media Queries*/
  @media (min-width: 769px) {
    
@@ -63,31 +70,7 @@
      min-height:10vh;
    }
  
- 
- .main-header .container {
-     display: flex;
-     justify-content: space-between;
-     align-items: flex-end;
-     flex-wrap: wrap;
-     flex-direction: row;
-   }
- 
- .main-nav li{
-   display: inline-flex;
-   padding: 0 1.5em;
-   }
- 
- .name{
-   display: inline-block;
-   }
- 
-   .container {
-   display: flex;
-   justify-content: center;
- }
- 
-@media (min-width: 1025px) {
 
-}
-
+ 
+ 
  }
