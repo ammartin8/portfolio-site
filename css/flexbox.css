@@ -1,5 +1,4 @@
-/*Base Styles*/
-
+/*Flex box Layout*/
 body {
   display: flex;
   flex-direction: column;
@@ -8,34 +7,27 @@ body {
 
 
 @media (min-width: 769px) {
+  .main-header,
+  .main-nav {
+    display: flex;
+  }
 
-    .main-header,
-    .main-header_2,
-    .main-nav {
-        display: flex;
-    }
+  .inside-footer {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1150px;
+  }
 
-    .main-header {
-      flex-direction: row; 
-      justify-content: space-between;
-      flex:1;
-    }
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    .main-header_2 {
-      flex: 1;
-    }
+  .main-nav {
+    justify-content: space-between;
+  }
+}
 
-    .container_1 {
-      display: block;
-      height: auto;
-      position: fixed;
-      margin-top: 5%;
-      width: 100%;
-    }
-
-
-
-
-
-
+@media (min-width: 1025px) {
+  
 }
