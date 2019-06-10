@@ -5,6 +5,9 @@ body {
   min-height: 100vh;
 }
 
+.feat-img {
+  flex: 1;
+}
 
 @media (min-width: 769px) {
   .main-header,
