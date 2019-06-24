@@ -18,8 +18,13 @@ body {
   padding: 1em;
 }
 
-img {
+  img {
   width: 100%;
+  height: 100%;
+}
+
+.mySlides img {
+  height: 1000px;
 }
 
 .main-nav a {
@@ -44,11 +49,24 @@ img {
   padding: 2em;
 }
 
-.feat-img {
+.feat-img1, 
+.feat-img2,
+.feat-img3,
+.feat-img4,
+.feat-img5 {
   padding: 0em;
   background-color: #000;
 }
 
+.mySlides {
+  display:none;
+}
+
+.slideshow-container {
+  height: 300px;
+  position: relative;
+  margin: auto;
+}
 
 i {
   padding: .5em 1em;
@@ -83,4 +101,11 @@ i {
 /*Media Queries*/
 @media (min-height: 769px) {
 
+}
+
+@media (max-width: 768px) {
+  img {
+    flex: 50%;
+    height: 50%;
+  }
 }
