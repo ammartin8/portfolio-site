@@ -29,6 +29,7 @@ body {
   .main-nav {
     justify-content: space-between;
   }
+
 }
 
 @media (min-width: 1025px) {
