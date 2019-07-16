@@ -12,10 +12,6 @@ hr {
   background-color: #fff;
 }
 
-.name {
-  color: #fff;
-  margin: 0;
-}
 
 .main-header {
   background-color: #000;
@@ -27,24 +23,6 @@ img {
   height: 100%;
 }
 
-.mySlides img {
-  height: 1000px;
-}
-
-.main-nav a {
-  color: #fff;
-}
-
-.name, 
-.main-nav {
-  text-align: center;
-  padding: .7 em;
-}
-
-.main-nav li {
-  padding: 1em;
-  color: #fff;
-}
 
 .main-footer  {
   text-align: center;
@@ -53,27 +31,9 @@ img {
   padding: 2em;
 }
 
-/* fade transition of carousel */
-.carousel .item {
-  left: 0 !important;
-    -webkit-transition: opacity .4s; /*adjust timing here */
-       -moz-transition: opacity .4s;
-         -o-transition: opacity .4s;
-            transition: opacity .4s;
-}
-.carousel-control {
-  background-image: none !important; /* remove background gradients on controls */
-}
-/* Fade controls with items */
-.next.left,
-.prev.right {
-  opacity: 1;
-  z-index: 1;
-}
-.active.left,
-.active.right {
-  opacity: 0;
-  z-index: 2;
+p {
+  color:#fff;
+  min-width: 14em;
 }
 
 
@@ -81,6 +41,33 @@ i {
   padding: .5em 1em;
 }
 
+.navbar-toggler-icon,
+.navbar-toggler{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+/* Create four equal columns that sits next to each other */
+.col {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.col img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
 
 
 /*Media Queries*/
@@ -91,12 +78,10 @@ i {
 }
 
 @media (max-width: 768px) {
-  .dropdown-menu {
-    opacity: .8;
-  }
 
-  .main-nav a {
-    color: #000;
+  .col {
+    flex: 50%;
+    max-width: 100%;
   }
 
 }
