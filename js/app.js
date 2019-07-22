@@ -5,3 +5,8 @@ function confirmationresponse() {
     return div;
 };
 confirmit.innerHTML = confirmationresponse();
+
+
+
+$('.hidepost').hide();
+
