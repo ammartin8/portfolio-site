@@ -8,31 +8,31 @@ body {
   background-color: #000;
 }
 
-hr {
-  background-color: #fff;
+a:hover {
+  color: rgb(223,98,77); 
+}
+
+p {
+  color: #fff;
+}
+
+h3 {
+  color: #fff;
 }
 
 /* Header */
 .main-header {
   background-color: #000;
-  padding: 1em;
+  padding: .25em;
+  margin-bottom: 3em;
 }
 
-img {
-  pointer-events: none;
 
-}
+
 
 /* Index Page Images */
-#slideimgs img {
 
-}
 
-/* Portfolio Page Images */
-#portimgs img:hover {
-  -webkit-filter: grayscale(100%); 
-  filter: grayscale(100%);
-}
 
 /* Footer */
 .main-footer  {
@@ -43,69 +43,95 @@ img {
 }
 
 /* All paragraph text */
-p {
+.plaintxt {
   color:#fff;
   min-width: 14em;
 }
 
-/* Social Media Icons */
+
+
+/* Social Media Icons Style*/
 i {
   padding: .5em 1em;
+  color: #fff;
+  font-size: 1.5rem;
 }
 
-/*Navigation Bar Toggle Button*/
-.navbar-toggler-icon,
-.navbar-toggler{
-  position: absolute;
-  top: 0;
-  right: 0;
+/* Styling Navigation Bar Links and Drop Down Box Links */
+.nav-link {
+  color: #fff;
+  cursor: pointer;
 }
+
+.nav-link:hover,
+i:hover {
+  color: rgb(223,98,77);
+}
+
+
 
 
 /* Responsive Photo Gallery */
 /* Creating a row for pictures */
-.row {
+#portimgs > .row {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
-.col {
+/* Creating separate columns */
+#portimgs > .col{
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
 }
 
-.col img {
+#portimgs img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
 }
 
+/* Creating animations for gallery images */
+
 
 /* Carousel*/
 #carouselShow {
   width: auto;
-  height: 100%;
+  max-height: 100%;
   padding: auto;
   margin: auto;
+}
+
+.carousel-item {
+  padding: 1em;
 }
 
 
 
 /*Media Queries*/
-@media (min-height: 769px) {
-
-
-
+@media (max-width: 576px) {
+  .col {
+    flex: 100%;
+    max-width: 100%;
+    margin-top: 0; 
+  }
 }
 
-@media (max-width: 768px) {
-
+@media (min-width: 577px) and (max-width: 768px) {
   .col {
     flex: 50%;
     max-width: 100%;
+  }
+}
+
+@media (min-width: 577px) {
+  /* Enlarging images on hover */
+  #portimgs img:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    position: relative;
+    z-index: 2;
   }
 
 }
