@@ -1,4 +1,4 @@
-/*Flex box Layout*/
+/* Flex box Layout
 body {
   display: flex;
   flex-direction: column;
@@ -34,4 +34,4 @@ body {
 
 @media (min-width: 1025px) {
   
-}
+} */
