@@ -30,7 +30,12 @@ a {
   background-color: #000;
   padding: .25em;
   margin-bottom: 3em;
-  height: 70px;
+  /* height: 80px; */
+}
+
+.logoImage {
+  width: 160px;
+  height: auto;
 }
 
 
