@@ -1,1 +1,1 @@
-The purpose of this project is to create a photography portfolio website displaying the types of photography topics I enjoy taking photos of as well as a little about myself and my background. :camera:
+Welcome! Please feel free to take a look at my web development website. I plan to continue updating this site to include new projects I've completed and currently working on.

@@ -1,143 +1,159 @@
-/* Base Styles */
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Allow links to scroll smoothly to next link on page */
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
-  background-color: #000;
+    font-family: 'Oswald', sans-serif;
 }
 
-a:hover {
-  color: rgb(223,98,77); 
+/*navbar header styling*/
+#navbarHeader p, a{
+    font-size: 1.2em;
 }
 
-p {
-  color: #fff;
+.logo {
+    font-size: 1.8em;
+}
+/* Bootstrap Jumbotron styling*/
+.jumbotron {
+    background-image:
+    linear-gradient(rgba(241, 9, 86), rgb(209, 66, 125, 0.9), rgb(236, 216, 37, 0.9)),
+    url('../img/jumbo_background_final.jpg');
+    background-size: cover, cover;
+    border-radius: 0;
 }
 
-h3 {
-  color: #fff;
+.profilepic {
+    min-width: 200px;;
 }
 
-a {
-  width: 100%;
-  height: 100%;
+.learnMoreHover{
+        animation-name: floating;
+        -webkit-animation-name: floating;
+    
+        animation-duration: 1.5s;	
+        -webkit-animation-duration: 1.5s;
+    
+        animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+    }
+    
+    @keyframes floating {
+        0% {
+            transform: translateY(0%);	
+        }
+        50% {
+            transform: translateY(15%);	
+        }	
+        100% {
+            transform: translateY(0%);
+        }			
+    }
+    
+    @-webkit-keyframes floating {
+        0% {
+            -webkit-transform: translateY(0%);	
+        }
+        50% {
+            -webkit-transform: translateY(15%);	
+        }	
+        100% {
+            -webkit-transform: translateY(0%);
+        }			
+    }
+
+/* Styling Skill Section */
+.skillSection {
+    background-color: rgb(101, 80, 145);
 }
 
-/* Header */
-.main-header {
-  background-color: #000;
-  padding: .25em;
-  margin-bottom: 3em;
-  /* height: 80px; */
+.skillHeader {
+    font-size: 2.0em;
+    color: #fff;
 }
 
-.logoImage {
-  width: 160px;
-  height: auto;
+.card-header {
+    background-color:  rgb(101, 80, 145);
 }
 
-
-/* Footer */
-.main-footer  {
-  text-align: center;
-  background-color: #000;
-  color: #fff;
-  padding: 2em;
-  height: 30px;
+.cardLength {
+    height: 40rem;
 }
 
-/* All paragraph text */
-.plaintxt {
-  color:#fff;
-  min-width: 14em;
+.card-body img {
+    width: 2.5em;
 }
 
-
-
-/* Social Media Icons Style*/
-i {
-  padding: .5em 1em;
-  color: #fff;
-  font-size: 1.5rem;
+.subheader {
+    font-size: 1.1em;
 }
 
-/* Styling Navigation Bar Links and Drop Down Box Links */
-.nav-link {
-  color: #fff;
-  cursor: pointer;
+/*styling list items in each skill section card*/
+.listItems {
+    font-size: 1.2em;
 }
 
-.nav-link:hover,
-i:hover {
-  color: rgb(223,98,77);
+/* Profile Pic Animation*/
+.profilepic:hover {
+    animation-name: spinny;
+    animation-duration: 2s;
+     
 }
-
-
-
-
-/* Responsive Photo Gallery */
-/* Creating a row for pictures */
-#portimgs > .row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
+@keyframes spinny {
+    100%{
+        transform: rotateY(360deg); 
 }
+};
 
-/* Creating separate columns */
-#portimgs > .col{
-  flex: 25%;
-  max-width: 25%;
-  padding: 0 4px;
+/* Portfolio section */
+.comingSoonAnimate:hover {
+    animation-name: spinny;
+    animation-duration: 2s;
+     
 }
-
-#portimgs img {
-  margin-top: 8px;
-  vertical-align: middle;
-  width: 100%;
+@keyframes spinny {
+    100%{
+        transform: rotateY(360deg); 
 }
+};
 
-/* Creating animations for gallery images */
+/* Overlay of project images */
 
 
-/* Carousel*/
-#carouselShow {
-  width: 80%;
-  height: auto;
-  padding: 0;
-  margin: auto;
-}
-
-.carousel-item {
-  padding: 1em;
+/* Styling all links on page  */
+footer a, 
+footer a:hover{
+    color: #fff;
+    font-size: 1.2em;
 }
 
 
+.nounderline {
+    text-decoration: none !important;
+}
 
-/*Media Queries*/
-@media (max-width: 576px) {
-  .col {
-    flex: 100%;
+
+/* call to action button  styling*/
+.callToAction:hover {
+    background-image: linear-gradient(to right, rgba(241, 9, 86), rgb(209, 66, 125, 0.9), rgb(236, 216, 37, 0.9));
+    border: none;
+}
+
+.callToActionLink,
+.callToActionLink:hover {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+/*Normal paragraph text styling*/
+.paragraphText {
+    font-size: 1.5em;
     max-width: 100%;
-    margin-top: 0; 
-  }
-}
-
-@media (min-width: 577px) and (max-width: 768px) {
-  .col {
-    flex: 50%;
-    max-width: 100%;
-  }
-}
-
-@media (min-width: 577px) {
-  /* Enlarging images on hover */
-  #portimgs img:hover {
-    -webkit-transform: scale(1.5);
-    transform: scale(1.5);
-    position: relative;
-    z-index: 2;
-  }
-
+    text-align: center;  
 }
