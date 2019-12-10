@@ -16,15 +16,17 @@ p {
   color: #fff;
 }
 
-h3 {
+h3, h4 {
   color: #fff;
 }
 
-a, span {
+a, 
+span {
   width: 100%;
   height: 100%;
   font-family: 'Bebas Neue', cursive, serif;
   font-size: 1.5em;
+  color: #fff;
 }
 
 /*Creating Flex box for site*/
@@ -71,7 +73,6 @@ a, span {
 
 /* Social Media Icons Style*/
 i {
-  padding: .5em 1em;
   color: #fff;
   font-size: 1.5rem;
 }
@@ -86,9 +87,6 @@ i {
 i:hover {
   color: rgb(223,98,77);
 }
-
-
-
 
 /* Responsive Photo Gallery */
 /* Creating a row for pictures */
@@ -146,7 +144,22 @@ i:hover {
   padding: 1em;
 }
 
+/*Blog Post Styling*/
+.post2 {
+  display: none;
+}
 
+.jumbotron {
+  padding: 0;
+  margin: 0;
+}
+
+.jumboImg {
+  background-image: url(../images/mountainBackgroundJumbo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+}
 
 /*Media Queries*/
 @media (max-width: 576px) {

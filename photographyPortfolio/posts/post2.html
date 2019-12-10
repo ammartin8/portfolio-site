@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Photography by Mellow A</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap&subset=latin-ext" rel="stylesheet">
+        <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/flexbox.css">
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+        <!-- Navigation bar -->
+        <header class="main-header my-0">
+            <div class="container">
+                
+              <nav class="navbar navbar-expand-lg navbar-dark row-12 no-gutters justify-content-center align-items-center">
+                
+                <div class="col-12 col-md-4 text-center text-lg-left">
+                  <a class="navbar-brand mx-0" href="../index.html">
+                    <img class="logoImage" src="../images/logo.svg" width="130" height="auto" alt="Logo showing words that display Mellow A Photography">
+                  </a>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-12 col-md-4 text-center">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                  <div class="collapse navbar-collapse row-12" id="navbarNavAltMarkup">
+                    <a class="nav-item nav-link col-md text-center text-lg-center p-lg-0" href="../portfolio.html">Gallery<span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link col-md text-center text-lg-center p-lg-0" href="../blog.html">Blog</a>
+                    <a class="nav-item nav-link col-md text-center text-lg-center p-lg-0" href="../contact.html">Info</a>
+                  </div>
+                </div>
+                
+              </nav>
+            </div>
+        </header> 
+        <!-- /Main Header -->
+        <!-- /Navigation bar -->
+    
+        <div class="jumbotron rounded">
+            <!-- <div class="jumboContainer"> -->
+                <div class="jumboImg"></div>
+            <!-- </div> -->
+        </div>
+        <div class="blog-post container">
+            <h1 class="blog-post-title mt-5 display-4 font-italic text-white">Ways to Improve Sharpness of Images in Affinity Photo</h1>
+            <p class="blog-post-meta">December 10, 2019 by <a href="../contact.html">Amah</a></p>
+            <p class="card-text mb-auto">Recently, I have been learning how to improve my photo editing skills through Affinity Photo. 
+                Read to learn some great tips in making images look sharp and clear.
+            </p>
+
+            <p id="post2">
+                    <h3>Unsharp Mask Method</h3>
+                    <ol class="plaintxt">
+                        <li>1. Duplicate the background image</li>
+                        <li>2. Go to Filters > Sharpen > Unsharp Mask</li>
+                        <li>3. Increase Factor until image appears sharpen but not too sharpen, ~ 2.00ish. The factor is the amount of sharpening.</li>
+                        <li>4. Then increase radius until image looks sharpen but not too exaggerated, make it appear natural.</li>
+                        <li>5. Then bring lower the factor slider right at the point before it becomes blurry</li>
+                        <li>6. The Threshold is usually kept at 0%. The threshold is used to  adjust sharpness for pixels that considered high contrast when compared next to each other. 
+                            The lower the contrast between the adjusted pixels the lower the threshold.
+                        </li>
+                    </ol>
+                    <br>
+                    <br>
+                   <h3>High Contrast Filter Method</h3>
+                        <ol class="plaintxt">
+                            <li>1. Duplicate layer (Ctrl + J)</li>
+                            <li>2. Filters > Sharpen > High Pass</li>
+                            <li>3. Switch blend mode to linear light to see image.</li>
+                            <li>4. Adjust radius until you have just enough sharpening.</li>
+                        </ol>
+                    <br>
+                    <br>
+                    <h4>Photo Edit Tip: You may apply sharpen again to get finer detail</h4>
+                    <ol class="plaintxt">
+                        <li>1. Duplicate background layer and move to top layer</li>
+                        <li>2. Filter > Sharpen > Highpass</li>
+                        <li>3. Adjust radius slightly to get more fine detail.</li>
+                    </ol>
+                    <br>
+                    <br>
+                    <h3>Clarity Method</h3>
+                    <ol class="plaintxt">
+                        <li>1. Duplicate background layer</li>
+                        <li>2. Filter > Sharpen > Clarity</li>
+                        <li>3. Adjust clarity until the image is just sharpened</li>
+                    </ol>
+                    <br>
+                    <br>
+                    <h4>Apply Clarity Method Non-destructively: Live filter Clarity</h4>
+                    <p>Remove duplicate layer and use only the background image. Then select the live filter layers and select clarity.
+                        Finally adjust in the same method as the first clarity method.
+                    </p>
+                    <br>
+                    <br>
+                    <h3>Tone Mapping Persona Method</h3>
+                        <ol class="plaintxt">
+                            <li>1. Select Tone Mapping Persona at top left</li>
+                            <li>2. Set tone compression and local contrast to 0.</li>
+                            <li>3. Go to Detail Refinement in Tone map tab</li>
+                            <li>4. increase radius slowly until sharpen</li>
+                            <li>5. Set amount until natural and sharpen</li>
+                        </ol>
+                    <br>
+                    <br>
+                    <h3>Sharpen with Blur Method</h3>
+                        <ol class="plaintxt">
+                            <li>1. Create two copies of background image</li>
+                            <li>2. Select two top layers and group</li>
+                            <li>3. Select group and select the blend mode to overlay</li>
+                            <li>4. Select top layer in group and select ctrl + I to invert</li>
+                            <li>5. Select that layer and blend mode and set to vivid light</li>
+                            <li>6. With top merged layer select and go to live filter and select bilateral blur filter.</li>
+                            <li>7. Slowly increase radius until just sharp</li>
+                            <li>8. Slowly increase tolerance until sharp</li>
+                        </ol>
+                    <br>
+                    <br>
+                    <h3>Photo Editing Tip: Importing Macros</h3>
+                        <p>If you find your self using the same methods to edit your photos you can create your own macro or import some else's macro.
+                            Macros may be accessible to download online. Here are the basic steps to import a previously made macro:
+                        </p>
+                        <ol class="plaintxt">
+                            <li>1. Open Library in View > Studio > Libraries</li>
+                            <li>2. Click top right corner and import macro</li>
+                        </ol>
+                        <br>
+                <p>These methods were discovered on Scott Williams Photography Youtube Channel. To watch how he demonstrates each of these methods, please check him out at <a href="https://www.youtube.com/watch?v=WsRWBHl4SnM" target="_blank">Scott Williams Photography</a>!  Thanks for reading!</p>
+
+            </p>
+        </div><!-- /.blog-post -->
+
+    <!-- footer -->
+    <footer class="main-footer mt-auto">
+        <div class="inside-footer">
+            <span>&copy;2019 Mellow A Designs</span><br>
+            <div class="social-icons">
+            <a href="https://www.instagram.com/mellowa_photography/"><i class="fab fa-instagram"></i></a> 
+            </div>
+        </div>
+    </footer>
+          <!-- /footer -->
+            
+          <!-- scripts -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"  crossorigin="anonymous"></script>
+          <script src="https://kit.fontawesome.com/44f9f33b0e.js"></script> 
+          <script src="js/app.js"></script>
+    </body>
