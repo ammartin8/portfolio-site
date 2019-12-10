@@ -1,1 +1,12 @@
-The purpose of this project is to create a photography portfolio website displaying the types of photography topics I enjoy taking photos of as well as a little about myself and my background. :camera:
+# Project Name: Mellow A Project Website
+
+>This is a personal website project displaying a slide show of photography photos, a gallery, and blog site.
+___
+
+## Created By: Amah Martin
+
+>[View Portfolio](https://ammartin8.github.io)
+
+## Requirements
+
+>None
