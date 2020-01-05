@@ -1,0 +1,223 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Code Unknown | Web Development Blog Series</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="blog-header py-3">
+            <div class="row flex-nowrap justify-content-between align-items-center">
+                <div class="col-4 pt-1">
+                    <a class="text-muted" href="#">Subscribe</a>
+                </div>
+                <div class="col-4 text-center">
+                    <a class="blog-header-logo text-dark" href="#">Code Unknown | A Web Dev Blog Series</a>
+                </div>
+                <div class="col-4 d-flex justify-content-end align-items-center">
+                    <a class="text-muted" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img"
+                            viewBox="0 0 24 24" focusable="false">
+                            <title>Search</title>
+                            <circle cx="10.5" cy="10.5" r="7.5" />
+                            <path d="M21 21l-5.2-5.2" />
+                        </svg>
+                    </a>
+                    <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+                </div>
+            </div>
+        </header>
+
+        <div class="nav-scroller py-1 mb-2">
+            <nav class="nav d-flex justify-content-between">
+                <a class="p-2 text-muted" href="#">Home</a>
+                <a class="p-2 text-muted" href="#">Portfolio</a>
+                <a class="p-2 text-muted" href="#">Contact</a>
+                <a class="p-2 text-muted" href="#">Resources</a>
+            </nav>
+        </div>
+
+        <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+            <div class="col-md-6 col-lg-12 px-0">
+                <h1 class="display-5 font-italic">Understanding Flexbox: The Difference Between Space-Between and
+                    Space-Around</h1>
+                <p class="lead my-3">Recently I have been practicing my skills in flexbox using Flex Froggy
+                    (a fun little game that challenges you to move the frog to a lilly pad using flexbox).
+                    While progressing through the levels, I realized I was having trouble
+                    differiating between <code>space-between</code> and <code>space-around</code> values in
+                    justify-content property.</p>
+                <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+            </div>
+        </div>
+        <div class="">
+            <h1>Understanding Flexbox: The Difference Between Space-Between and Space-Around</h1>
+
+            <p>
+                Recently I have practicing my skills in flexbox using www.flexboxfroggy.com (fun little game that
+                challenges you to move the frog to the lilly pad using flexbox). The reason I wanted to learn the basic
+                concepts of flexbox in the beginning of my coding journey because it has a growing standard to make
+                website responsive regardless of the type of device used to view any website. The CSS flexbox Layout is
+                a great model to use to achieve responsive websites. It has also been included in the World Wide Web
+                Consortium's (W3C) candidate recommendation stage which sets standards for the world wide web.
+            </p>
+
+            <br>
+            [Insert good and bad examples of responsive design using flexbox]
+            <br>
+
+            <p>
+                The main idea of flexbox is to define elements in terms of two axes which are referred to as the main
+                axis and
+                the cross axis. The main axis is defined by the flex direction property and the cross axis runs
+                perpendicular to the main axis. The cross axis can be set using the <code>row</code>,
+                <code>row-reverse</code>, <code>column</code>, or
+                <code>column-reverse</code> property. You can learn more about the flexbox model on the (Mozilla
+                Developer Network)
+                Website by reviewing (Basic concepts of flexbox).
+            </p>
+
+            <img src="img/main-cross-axis.png" class="img-fluid" width="800px" height="100px"
+                alt="graphic illustration showing the position of the main axis relative to the cross axis in a flexbox container">
+            <figcaption class="text-muted figure-caption figure-img">Figure 1. Graphic illustration showing the position
+                of the main axis relative to the cross axis in a flexbox container</figcaption>
+            <br>
+
+            <p>
+                While practicing my flexbox skills using flexfroggy, I realized I was having trouble differeiating
+                between <code>space-between</code> and <code>space-around</code> values in justify-content property. I
+                was also struggling
+                with figuring out when it is appropriate to use <code>justify-content</code>,
+                <code>align-content</code>, <code>align items</code>. I
+                realized this because I started to just test out each property until I got the right answer, so I
+                decided to write this mini post on the concept and help me further cement the concept in my mind. If you
+                have trouble with understanding the differences as well here is a summary of what I learned:
+            </p>
+            <br>
+
+            <h2>Using Justify-content: Space-around vs. Space-between</h2>
+
+            <p>
+                When you need to the justify-content property, comparing space-around vs space-between the difference
+                appears subtle at first, depending on how much space you have in your flexbox container. The value
+                <code>space-between</code> evenly distributes space "between" each item equally in the flexbox container
+                where the
+                first item is on the start of the line and the last item is on the end of the line:
+            </p>
+
+            <br>
+            [Insert image showing space between]
+            <br>
+
+            <p>
+                The value <code>space-around</code> also distributes items evenly however, the the space is distributed
+                "around"
+                each item equally within the flexbox container. Visually this may look uneven, especially when looking
+                at the first and last items but this because the space is applied on top, bottom, left and right of
+                "every" item and since there are no items on either end, it will only apply a half-size space compared
+                to the other items:
+            </p>
+
+            <br>
+            [Insert image showing space around]
+            <br>
+
+            <h2>What's the Difference? Justify-content vs Align-content vs Align-item</h2>
+
+            <p>
+                I don't know about you but when I not sure what of the answer when coding, I start guessing what should
+                go there until I get the outcome I want and if don't get the right outcome, I do a google search. This
+                method is perfectly fine, it certainly is part of learning to code but as I said, I realize this is a
+                concept I still struggle with because I tend to focus on whether or not it works instead of "why" it
+                works. And who knows, it might pop up as an interview question someday. So here we go:
+            </p>
+            <br>
+
+            <h2>Justify-content</h2>
+
+            <p>
+                The justify-content property is used to align the items in flexbox container on the main axis. Remember
+                that the main axis is determined by the <code>flex-direction</code> so if the direction is defined as a
+                column for
+                example, then the justify-content property will align items along the column and if it is defined as a
+                row, items will align along the row, etc. The justify-content property is useful for basically aligning
+                the items in the flexbox container and helps distributes space left over in the container.
+            </p>
+
+            <br>
+            [Insert example]
+            <br>
+
+            <h2>Align-content</h2>
+
+            <p>
+                I often get this confused with justify-content and wonder why my items or containers are not adjusting
+                as I expect. The align-content property is useful for aligning the "lines" within the flex container
+                when there
+                is extra space within the container along the cross axis. So if you want the content within the
+                container to be at the top you would provide the <code>flex-start</code> value, which is default. If you
+                prefer to
+                have the content in the middle of the container you would provide the center value. Keep in mind that if
+                there is only one line of items in the container you will not see any changes by adjusting the align
+                content property.
+            </p>
+            <br>
+            [Insert example]
+            <br>
+
+            <h2>Align-items</h2>
+
+            <p>
+                The <code>align-items</code> property is useful for adjusting how the items within the container will be
+                aligned
+                along the cross axis. In contrast, justify-content adjust the items along the main axis.
+            </p>
+            <br>
+            [Insert example]
+            <br>
+        </div>
+
+        <footer class="text-muted bg-dark">
+            <div class="container">
+                <p class="float-right">
+                    <a href="#">Back to top</a>
+                </p>
+                <h4 class="text-black">Contact</h4>
+                <ul class="list-unstyled">
+                    <li><a href="https://www.twitter.com/amuzen22" class="bootstrapOverride">Follow on Twitter</a></li>
+                    <li><a href="https://github.com/ammartin8" class="bootstrapOverride">Follow on GitHub</a></li>
+                    <li><a href="mailto:ammartin8249@gmail.com" class="bootstrapOverride">Email me</a></li>
+                </ul>
+                <p class="text-center my-0 py-3">&copy; 2019 Designed by Me, Amah</p>
+            </div>
+        </footer>
+
+        <!-- scripts -->
+        <script src="js/scripts.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+        <script src="js/scripts.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <!-- /scripts  -->
+</body>
+
+</html>

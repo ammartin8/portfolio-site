@@ -1,7 +1,5 @@
 $('.confirm').html("<p>Thank you for contacting me!<br>I will be reaching out to you within the next 48 hours and look forward to connecting with you!</p>");
 
-
-
 // Hides rest of blog post
 $('.hidepost').hide();
 
